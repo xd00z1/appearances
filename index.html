@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Appearances</title>
+<meta name="description" content="Appearances is an art collective in Austin, Texas. Studio copies after the masters, and originals.">
+<style>
+  :root { --ink:#16130f; --paper:#f3efe6; --mute:#7a7265; --rule:#d9d2c3; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  html { scroll-behavior:smooth; }
+  body { background:var(--paper); color:var(--ink); font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif; line-height:1.55; -webkit-font-smoothing:antialiased; }
+  header { display:flex; justify-content:space-between; align-items:baseline; padding:28px 5vw; font-family:ui-sans-serif,"Helvetica Neue",Helvetica,Arial,sans-serif; font-size:12px; letter-spacing:.18em; text-transform:uppercase; }
+  header a { color:inherit; text-decoration:none; border-bottom:1px solid transparent; }
+  header a:hover { border-color:var(--ink); }
+  .hero { padding:12vh 5vw 10vh; border-bottom:1px solid var(--rule); }
+  h1 { font-weight:400; font-size:clamp(56px,13vw,190px); line-height:.9; letter-spacing:-.035em; font-style:italic; }
+  .hero p { margin-top:5vh; max-width:34ch; font-size:clamp(18px,2vw,24px); color:var(--mute); }
+  .wall { columns:3 300px; column-gap:22px; padding:8vh 5vw; }
+  figure { break-inside:avoid; margin-bottom:22px; }
+  figure img { width:100%; display:block; filter:saturate(.92); transition:filter .4s, transform .6s; }
+  figure:hover img { filter:saturate(1.08); transform:scale(1.012); }
+  figcaption { font-family:ui-sans-serif,"Helvetica Neue",Helvetica,Arial,sans-serif; font-size:11px; letter-spacing:.08em; text-transform:uppercase; color:var(--mute); padding-top:9px; }
+  .about { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:6vw; padding:10vh 5vw; border-top:1px solid var(--rule); }
+  .about h2 { font-weight:400; font-style:italic; font-size:30px; margin-bottom:12px; }
+  .about p { color:var(--mute); font-size:18px; max-width:32ch; }
+  footer { padding:28px 5vw 40px; border-top:1px solid var(--rule); font-family:ui-sans-serif,"Helvetica Neue",Helvetica,Arial,sans-serif; font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--mute); display:flex; flex-wrap:wrap; gap:12px; justify-content:space-between; }
+</style>
+</head>
+<body>
+
+<header>
+  <span>Appearances</span>
+  <a href="#about">Austin, Texas</a>
+</header>
+
+<section class="hero">
+  <h1>Appearances</h1>
+  <p>An art collective. Copies after the masters, and originals, painted by hand.</p>
+</section>
+
+<section class="wall" aria-label="Reference works">
+  <figure><img src="img/wanderer.jpg" alt="Wanderer above the Sea of Fog by Caspar David Friedrich" loading="lazy"><figcaption>Friedrich, 1818</figcaption></figure>
+  <figure><img src="img/wave.jpg" alt="The Great Wave off Kanagawa by Hokusai" loading="lazy"><figcaption>Hokusai, c. 1831</figcaption></figure>
+  <figure><img src="img/kiss.jpg" alt="The Kiss by Gustav Klimt" loading="lazy"><figcaption>Klimt, 1908</figcaption></figure>
+  <figure><img src="img/almond.jpg" alt="Almond Blossom by Vincent van Gogh" loading="lazy"><figcaption>Van Gogh, 1890</figcaption></figure>
+  <figure><img src="img/pearl.jpg" alt="Girl with a Pearl Earring by Johannes Vermeer" loading="lazy"><figcaption>Vermeer, c. 1665</figcaption></figure>
+  <figure><img src="img/sunrise.jpg" alt="Impression, Sunrise by Claude Monet" loading="lazy"><figcaption>Monet, 1872</figcaption></figure>
+  <figure><img src="img/starry.jpg" alt="The Starry Night by Vincent van Gogh" loading="lazy"><figcaption>Van Gogh, 1889</figcaption></figure>
+  <figure><img src="img/jatte.jpg" alt="A Sunday on La Grande Jatte by Georges Seurat" loading="lazy"><figcaption>Seurat, 1884</figcaption></figure>
+</section>
+
+<section class="about" id="about">
+  <div><h2>Copies</h2><p>Studio copies of well-known works, made the old way: by looking hard and painting slowly.</p></div>
+  <div><h2>Originals</h2><p>New work from the same hands. Each artist keeps their own voice.</p></div>
+  <div><h2>Artists</h2><p>We work with student and emerging painters in Austin, paid per piece.</p></div>
+</section>
+
+<footer>
+  <span>Appearances, Austin, Texas</span>
+  <span>Images shown are the original works, in the public domain</span>
+</footer>
+
+</body>
+</html>
